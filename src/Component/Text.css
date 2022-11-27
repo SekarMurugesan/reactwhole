@@ -1,0 +1,49 @@
+.firstletter::first-letter {
+    font-size: 170%;
+    color:blue
+    }
+    mark {
+      background-color: yellow;
+      color: black;
+    }
+    .textindent {text-indent: 100px;}
+    
+    .line-break {
+      white-space:pre-line
+    }
+
+.through { 
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+  }
+ .under {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+  }
+ .overline {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+  }
+
+  .spacing {
+    letter-spacing: 3px;
+  }
+  .lineheight {
+    line-height: 0.8;
+  }
+ .shadows  {
+    text-shadow: 2px 2px;
+  }
+  .selection::selection {
+    color: brown;
+    background-color: rgb(252, 248, 248);
+    font-weight:bolder
+  }
+  .viewport {
+    font-size: 1.5vw;
+  }
+  .em {
+    font-size: 1.5em;
+  }
+
+

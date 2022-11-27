@@ -1,0 +1,9 @@
+.move li {
+    list-style-type: none;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+     } 
+     .move button {
+      background-color: aqua;
+     }

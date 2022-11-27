@@ -1,0 +1,20 @@
+.log {height:"170px"}
+.user {width: 500px; display: inline-block;text-align: right;}
+.input {margin-left: 20px;width: 180px;color:"blue"; background-color:violet;border-radius:50px;height:25px}
+.please {width: 630px;text-align: right; }
+.eyeone {position: relative;right: 30px;top: -2px;cursor: pointer;}
+.eye {position: relative;right: 30px;top: -2px;cursor: pointer}
+.error {text-align: center; }
+.touched {margin-left: 20px;width: 180px;border: 2px solid red;}
+.forms {text-align: center;}
+
+/*checkbox dynamic*/
+.checkdynamic input {
+    width: 30px;
+}
+.checkdynamic label {width: 40px;text-align: left;margin-bottom: 5px;vertical-align: middle;}
+
+/*dropdown dynamic*/
+.dropdynamic {
+    width:100px
+}
