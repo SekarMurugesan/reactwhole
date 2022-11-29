@@ -142,6 +142,13 @@ function clickbutton(e) {
 let padstarttext='5';
 let padstarttextnew=padstarttext.padStart(3,'0');
 
+//decimal to binary
+let decimal=50;
+let binary=decimal.toString(2);
+//binary to decimal
+let newbinary=110010;
+let newdecimal=parseInt(newbinary,2)
+
 
   return (<>
 {/*setTimeout*/}
@@ -228,7 +235,15 @@ let padstarttextnew=padstarttext.padStart(3,'0');
 
 {/*padStart to add zero infront*/}
 <div className='heading' >padStart to add zero infront</div>
-<label><ins>padStart:</ins></label>{padstarttextnew}
+<label><ins>padStart:</ins></label>{padstarttextnew}<br/><br/>
+
+{/*decimal to binary*/}
+<div className='heading' >Decimal to binary</div>
+<label><ins>Decimal to binary(50):</ins></label>{binary}<br/>
+{/*binary to decimal*/}
+<div className='heading' >Binary to decimal</div>
+<label><ins>Binary to decimal(110010):</ins></label>{newdecimal}<br/>
+
 </>
   )
 }
