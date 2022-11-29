@@ -149,6 +149,13 @@ let binary=decimal.toString(2);
 let newbinary=110010;
 let newdecimal=parseInt(newbinary,2)
 
+//get last digit
+let numberdigit=53;
+let lastdigit=53%10;
+let lastdigitslice=numberdigit.toString().slice(-1);
+let lastdigitlength=numberdigit.toString().charAt((numberdigit.toString().length)-1);
+
+
 
   return (<>
 {/*setTimeout*/}
@@ -242,7 +249,15 @@ let newdecimal=parseInt(newbinary,2)
 <label><ins>Decimal to binary(50):</ins></label>{binary}<br/>
 {/*binary to decimal*/}
 <div className='heading' >Binary to decimal</div>
-<label><ins>Binary to decimal(110010):</ins></label>{newdecimal}<br/>
+<label><ins>Binary to decimal(110010):</ins></label>{newdecimal}<br/><br/>
+
+{/*get last digit*/}
+<div className='heading' >Get last digit</div>
+<label><ins>Get last digit(by modulus):</ins></label>{lastdigit}<br/>
+<label><ins>Get last digit(by slice):</ins></label>{lastdigitslice}<br/>
+<label><ins>Get last digit(by string length):</ins></label>{lastdigitlength}<br/><br/>
+
+
 
 </>
   )
