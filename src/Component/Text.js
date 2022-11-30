@@ -17,6 +17,7 @@ const Text = () => {
 
 
   return (<>
+    <h1>தமிழ்</h1>
     <p>The way you highlighted the <b>Text</b> bold</p>
     <h1 className='overline'>Over line</h1>
     <p>The way you highlighted the <del>Text</del> deleted</p>
