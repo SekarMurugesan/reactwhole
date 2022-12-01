@@ -42,7 +42,7 @@ function App() {
        <div className='bg container-fluid'>
          <div className='sticky-top'>
          <div className='con'>
-           <NavLink to="/" activeClassName="fas" className="con-le">Home</NavLink>
+           <NavLink to="/reactwhole" activeClassName="fas" className="con-le">Home</NavLink>
            <NavLink to="/news" activeClassName="fas" className="con-le">News</NavLink>
            <NavLink to="/article" activeClassName="fas" className="con-le">Article</NavLink>
            <NavLink to="/blog" activeClassName="fas" className="con-le">Blog</NavLink>
@@ -119,7 +119,7 @@ function App() {
         <vcontext.Provider value={"Robin"}>
         
         <Routes>
-             <Route exact path="/" element={<Home />} ></Route>
+             <Route exact path="reactwhole" element={<Home />} ></Route>
              <Route path="news" element={<News />} ></Route>
              <Route path="article" element={<Article />} ></Route>
              <Route path="blog" element={<Blog />} >
