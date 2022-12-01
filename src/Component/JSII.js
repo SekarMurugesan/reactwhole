@@ -81,7 +81,7 @@ let stringplusnumber ="a"+10;
 let numberplusstring =10+"a";
 let numberminusstring =10-"a";
 let stringminusnumber ="a"-10;  
-let stringnumberminusnumber ="20"-10 ;
+let stringnumberminusnumber ="20"+10 ;
 let numberminusstringnumber =10-"20" ;
 
 //find key from value
@@ -155,7 +155,16 @@ let lastdigit=53%10;
 let lastdigitslice=numberdigit.toString().slice(-1);
 let lastdigitlength=numberdigit.toString().charAt((numberdigit.toString().length)-1);
 
-
+//ternary operator
+let terA=1;
+let terB=2;
+let terC=3;
+let terD=true;
+let terE=false;
+let terF=false;
+let terG=true;
+let terH=true;
+let terI=true;
 
   return (<>
 {/*setTimeout*/}
@@ -256,6 +265,12 @@ let lastdigitlength=numberdigit.toString().charAt((numberdigit.toString().length
 <label><ins>Get last digit(by modulus):</ins></label>{lastdigit}<br/>
 <label><ins>Get last digit(by slice):</ins></label>{lastdigitslice}<br/>
 <label><ins>Get last digit(by string length):</ins></label>{lastdigitlength}<br/><br/>
+
+{/*ternary*/}
+<div className='heading' >Ternary operator</div>
+<label><ins>D true E false : </ins></label>{terD?terE? terA:terB:terC}<br/>
+<label><ins>F false G false(or)true : </ins></label>{terF?terG? terA:terB:terC}<br/>
+<label><ins>H true I true : </ins></label>{terH?terI? terA:terB:terC}<br/><br/>
 
 
 
