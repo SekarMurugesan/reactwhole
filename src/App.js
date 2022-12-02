@@ -65,6 +65,12 @@ function App() {
          </div>
 
          {/*navbar*/}
+         {/*importence 2nd method of navbar creation*/}
+    {/*<div className='d-flex fw-bold fs-3 flex-row bg-primary nav'>
+  <div className='d-flex flex-row'><div className='p-2'>one</div><div className='p-2'>two</div><div className='p-2'>three</div></div>
+  <div className='d-flex mx-auto'><div className='p-2'>four</div></div>
+  <div className='d-flex'><div className='p-2'>five</div></div>
+</div> */}     
   <nav className="navbar navbar-expand navbar-light bg-info navbarespn">
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto container">
