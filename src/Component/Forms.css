@@ -18,3 +18,11 @@
 .dropdynamic {
     width:100px
 }
+
+/*dropdown on hover*/
+.dropdowns:hover .dropdown-menu {
+display: block;
+width:200px;
+position: relative;
+margin: auto;
+}

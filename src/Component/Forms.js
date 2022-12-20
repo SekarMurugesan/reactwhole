@@ -35,6 +35,10 @@ function Contact() {
   const disabledcount = dynacheckedcount >= 3;  
   
 function Changecheck(e,i) { 
+//checked values
+let checkedval=[...document.querySelectorAll('.check:checked')].map((e)=>e.value); 
+let notcheckedval=[...document.querySelectorAll('.check:not(:checked)')].map((e)=>e.value);
+//
 let key=e.target.name;
 if(e.target.checked) {
 setobj([...obj,key]);setDynacheckedcount(prev=>prev+1)}
@@ -124,8 +128,8 @@ else {setobj(obj.filter(CheckedId=>CheckedId !== key));setDynacheckedcount(prev=
   {array.map((e)=><option>{e.labels}</option>)}  
   </select><br/><br/><br/><br/>
   
-  {/*dynamic dropdown on hover*/}
-  <div><ins>Dynamic dropdown on hover</ins></div>
+  {/*dynamic dropdown on click and then hover*/}
+  <div><ins>Dynamic dropdown onclick and then hover</ins></div>
   <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         Dropdown Button
@@ -134,10 +138,19 @@ else {setobj(obj.filter(CheckedId=>CheckedId !== key));setDynacheckedcount(prev=
       <Dropdown.Menu>
         {array.map((e)=>(<Dropdown.Item href="#/action-1">{e.labels}</Dropdown.Item>))}
       </Dropdown.Menu>
-    </Dropdown><br/><br/><br/>
+    </Dropdown><br/>
 
-  
-
+   {/*dynamic dropdown on hover*/}
+  <div><ins>Dynamic dropdown on hover</ins></div>
+  <li className="dropdowns">
+    <div>Dropdown</div>
+    <div className="dropdown-menu">
+      <a className="dropdown-item">one</a>
+      <a className="dropdown-item">two</a>
+      <a className="dropdown-item">three</a>
+    </div>
+  </li>
+  <br/><br/><br/><br/>
   </div>
 </div>
 </div>)
