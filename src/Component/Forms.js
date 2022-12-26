@@ -61,7 +61,7 @@ else {setobj(obj.filter(CheckedId=>CheckedId !== key));setDynacheckedcount(prev=
    
   //dynamic dropdown
   //mutiple dropdown select value
-  let mutipleselectdrop=[...e.target.options].filter(o => o.selected).map(o => o.value);
+  //let mutipleselectdrop=[...e.target.options].filter(o => o.selected).map(o => o.value);
   //
   const [dropdyna, setdropdyna] = useState("");
   function Changedrop(e) {
