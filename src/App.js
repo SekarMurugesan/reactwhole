@@ -83,7 +83,7 @@ function App() {
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style={{color:"black"}}>
           <div className='one'>
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item " href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a></div>
           <div className='two'>
