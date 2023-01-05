@@ -1,6 +1,8 @@
 .videos::-webkit-media-controls {
     display: none;
   }
+
+ /*carousel*/
   .carousel-indicators [data-bs-target] {
     width: 5px !important;
     height: 5px !important;
