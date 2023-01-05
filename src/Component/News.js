@@ -86,7 +86,7 @@ const handleClicked = (e)=>setCurrentPage(e.selected+1)
 
 
   return (<div>
-    <Carousel interval={3000} variant="dark" >
+    <Carousel interval={3000} variant="dark" className="mycarousel" >
     <Carousel.Item> 
       <img
         height="400px" width="100%"
