@@ -41,7 +41,7 @@ function Article() {
     return () => {
       handleCancelClick();
     };
-  });
+  },[]);
 
 
   return ( <div>{clockState} 
