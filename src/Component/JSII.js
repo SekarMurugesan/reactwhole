@@ -285,6 +285,7 @@ const Starfunc=()=>{
 <label><ins>H true I true : </ins></label>{terH?terI? terA:terB:terC}<br/><br/>
 
 {/*star func*/}
+<div className='heading' >Starfunc</div>
 {Starfunc()}
 
 </>
