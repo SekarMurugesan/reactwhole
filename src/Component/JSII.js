@@ -166,6 +166,18 @@ let terG=true;
 let terH=true;
 let terI=true;
 
+//star func
+const Starfunc=()=>{
+  let n = 5;
+  let string = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = 0; j < i; j++) {
+      string += "*";
+    }
+    string +=' ' 
+  }
+  return string.split(' ').map((e)=><div>{e}</div>)
+}
   return (<>
 {/*setTimeout*/}
 <div className='heading' >setTimeout</div>
@@ -272,7 +284,8 @@ let terI=true;
 <label><ins>F false G false(or)true : </ins></label>{terF?terG? terA:terB:terC}<br/>
 <label><ins>H true I true : </ins></label>{terH?terI? terA:terB:terC}<br/><br/>
 
-
+{/*star func*/}
+{Starfunc()}
 
 </>
   )
