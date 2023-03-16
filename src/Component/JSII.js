@@ -197,6 +197,14 @@ let arrayA=[{one:'1',two:'2'}];
 let arrayB=deepclone(arrayA);
 arrayB[0].one='2';
 
+//child to parent
+const [parentstate,setParentstate]=useState("initial");
+//<childfunc setParentstate={setParentstate}/>
+const childfunc=({setParentstate})=>{
+setParentstate("changed value")
+}
+
+
 
   return (<>
 {/*setTimeout*/}
