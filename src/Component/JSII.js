@@ -59,8 +59,11 @@ let compareA= [1,2,3,4,5,6,7];
 let compareB= [1,2,3,4];
 let b1=new Set(compareB);
 let comparearrayresult=[...new Set(compareA.filter((e)=>!b1.has(e)))];
-
-
+let secondcompareresult=compareA.filter((e)=>{
+  return !compareB.find((ev)=>{
+    return ev==e
+  })
+})
 
 //var,let,const
 var x = 12
@@ -178,6 +181,23 @@ const Starfunc=()=>{
   }
   return string.split(' ').map((e)=><div>{e}</div>)
 }
+
+//copy array of object without affect parent
+const deepclone = (input) => {
+  let result = Array.isArray(input) ? [] : {};
+  if (typeof input != 'object') {
+    return input;
+  }
+  for (let key in input) {
+    result[key] = deepclone(input[key]);
+  }
+  return result;
+}
+let arrayA=[{one:'1',two:'2'}];
+let arrayB=deepclone(arrayA);
+arrayB[0].one='2';
+
+
   return (<>
 {/*setTimeout*/}
 <div className='heading' >setTimeout</div>
@@ -210,7 +230,8 @@ const Starfunc=()=>{
 
 {/*compare two array and extract different*/}
 <div className='heading' >compare two array and extract different</div>
-<label><ins>compare array:</ins></label>{comparearrayresult+''}<br/><br/>
+<label><ins>compare array:</ins></label>{comparearrayresult+''}<br/>
+<label><ins>compare array(second method):</ins></label>{secondcompareresult+''}<br/><br/>
 
 {/*var let const*/}
 <div className='heading' >var,let,const</div>
@@ -286,7 +307,12 @@ const Starfunc=()=>{
 
 {/*star func*/}
 <div className='heading' >Starfunc</div>
-{Starfunc()}
+{Starfunc()}<br/><br/>
+
+{/*copy array of object without affect parent*/}
+<div className='heading' >Deepclone</div>
+<label><ins>ArrayA : </ins></label>{arrayA.map((e)=>e.one)}<br/>
+<label><ins>ArrayB : </ins></label>{arrayB.map((e)=>e.one)}<br/><br/>
 
 </>
   )

@@ -36,13 +36,14 @@ function Contact() {
   
 function Changecheck(e,i) { 
 //checked values
-let checkedval=[...document.querySelectorAll('.check:checked')].map((e)=>e.value); 
+let checkedval=[...document.querySelectorAll('.checkdynamics:checked')].map((e)=>e.value); 
 let notcheckedval=[...document.querySelectorAll('.check:not(:checked)')].map((e)=>e.value);
 //
 let key=e.target.name;
 if(e.target.checked) {
 setobj([...obj,key]);setDynacheckedcount(prev=>prev+1)}
 else {setobj(obj.filter(CheckedId=>CheckedId !== key));setDynacheckedcount(prev=>prev-1)}
+console.log(checkedval)
 } 
  useEffect(() => { 
   let a=array.map((e)=>e.name);
@@ -119,7 +120,7 @@ else {setobj(obj.filter(CheckedId=>CheckedId !== key));setDynacheckedcount(prev=
   {/*dynamic form*/}
    {/*dynamic checkbox*/}
   <div><ins>Dynamic checkbox</ins></div>
-  {array.map((e,i)=>{return (<div className="checkdynamic"><form><input type="checkbox" id={e.name} name={e.name}  value={e.labels} disabled={e.name==disable}  onChange={(e)=>Changecheck(e)}/><label key={i}>{e.labels}</label></form></div>)})}<br/>
+  {array.map((e,i)=>{return (<div ><form><input type="checkbox" className="checkdynamics" id={e.name} name={e.name}  value={e.labels} disabled={e.name==disable}  onChange={(e)=>Changecheck(e)}/><label key={i}>{e.labels}</label></form></div>)})}<br/>
  
   {/*dynamic radiobutton*/}
   <div><ins>Dynamic Radio button</ins></div>
