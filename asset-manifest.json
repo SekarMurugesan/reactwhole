@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactwhole/static/css/main.f40f04ce.css",
-    "main.js": "/reactwhole/static/js/main.4a382184.js",
+    "main.js": "/reactwhole/static/js/main.b8f87034.js",
     "static/js/733.c646215b.chunk.js": "/reactwhole/static/js/733.c646215b.chunk.js",
     "static/js/787.bf4f2fcf.chunk.js": "/reactwhole/static/js/787.bf4f2fcf.chunk.js",
     "static/media/kathal_kathal.mp3": "/reactwhole/static/media/kathal_kathal.99e38e3ee9e9101b0a7f.mp3",
@@ -23,12 +23,12 @@
     "index.html": "/reactwhole/index.html",
     "static/media/font-icon.svg": "/reactwhole/static/media/font-icon.6aa70ab62d66d8656df2.svg",
     "main.f40f04ce.css.map": "/reactwhole/static/css/main.f40f04ce.css.map",
-    "main.4a382184.js.map": "/reactwhole/static/js/main.4a382184.js.map",
+    "main.b8f87034.js.map": "/reactwhole/static/js/main.b8f87034.js.map",
     "733.c646215b.chunk.js.map": "/reactwhole/static/js/733.c646215b.chunk.js.map",
     "787.bf4f2fcf.chunk.js.map": "/reactwhole/static/js/787.bf4f2fcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f40f04ce.css",
-    "static/js/main.4a382184.js"
+    "static/js/main.b8f87034.js"
   ]
 }
