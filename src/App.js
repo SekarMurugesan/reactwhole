@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import {Route,NavLink, useNavigate, } from "react-router-dom";
 import Forms from "./Component/Forms";
-import Home from "./Component/Home";
+import Homes from "./Component/Homes";
 import Article from "./Component/Article";
 import News from "./Component/News";
 import Videos from "./Component/Videos";
@@ -42,7 +42,7 @@ function App() {
        <div className='bg container-fluid'>
          <div className='sticky-top'>
          <div className='con'>
-           <NavLink to="/reactwhole" activeClassName="fas" className="con-le">Home</NavLink>
+           <NavLink to="/reactwhole" activeClassName="fas" className="con-le">Homes</NavLink>
            <NavLink to="/news" activeClassName="fas" className="con-le">News</NavLink>
            <NavLink to="/article" activeClassName="fas" className="con-le">Article</NavLink>
            <NavLink to="/blog" activeClassName="fas" className="con-le">Blog</NavLink>
@@ -125,7 +125,7 @@ function App() {
         <vcontext.Provider value={"Robin"}>
         
         <Routes>
-             <Route exact path="reactwhole" element={<Home />} ></Route>
+             <Route exact path="reactwhole" element={<Homes />} ></Route>
              <Route path="news" element={<News />} ></Route>
              <Route path="article" element={<Article />} ></Route>
              <Route path="blog" element={<Blog />} >

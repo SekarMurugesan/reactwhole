@@ -12,7 +12,7 @@ import {useForm} from "react-hook-form";
 
 
 
-function Home() {
+function Homes() {
   
 const numOfCount=useSelector((state)=>state.count.numOfCount)
 const dispatch=useDispatch()
@@ -68,4 +68,4 @@ const onSubmit= (values)=>console.log(values);
 };
 
 
-export default Home
+export default Homes
